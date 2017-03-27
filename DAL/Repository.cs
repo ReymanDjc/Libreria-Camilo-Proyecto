@@ -42,7 +42,15 @@ namespace DAL
 
         public TEntity BuscarOtro(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return EntitySet.Find(id);              
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Dispose()

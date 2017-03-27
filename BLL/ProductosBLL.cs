@@ -79,7 +79,7 @@ namespace BLL
             }
         }
 
-        public static Productos BuscarOtro(int id)
+      public static Productos BuscarOtro(int id)
         {
             using (var context = new Repository<Productos>())
             {

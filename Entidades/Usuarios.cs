@@ -13,5 +13,16 @@ namespace Entidades
         public string Nombres { get; set; }
         public string Clave { get; set; }
         public string ConfirmarClave { get; set; }
+        public Usuarios()
+        {
+
+        }
+        public Usuarios(int usuarioId, string nombre,string clave)
+        {
+            this.UsuarioId = usuarioId;
+            this.Nombres = nombre;
+            this.Clave = clave;
+        }
     }
+    
 }

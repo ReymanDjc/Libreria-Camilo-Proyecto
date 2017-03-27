@@ -140,11 +140,11 @@ namespace LibreriaCamilo.Registros
                 if (ProductosBLL.Eliminar(ProductosBLL.Buscar(p => p.ProductoId == id)))
                 {
                     Limpiar();
-                    MessageBox.Show("El Usuario se elimino con exito.");
+                    MessageBox.Show("El Produto se elimino con exito.");
                 }
                 else
                 {
-                    MessageBox.Show("El Usuario no se pudo eliminar.");
+                    MessageBox.Show("El Producto no se pudo eliminar.");
                 }
             }
         }

@@ -56,17 +56,26 @@ namespace BLL
 
         public static Facturas Buscar(Expression<Func<Facturas, bool>> criterio)
         {
+            Facturas retorno = null;
+
             using (var conec = new Repository<Facturas>())
             {
                 try
                 {
-                    return conec.Buscar(criterio);
+                    retorno =  conec.Buscar(criterio);
+
+                    if (retorno != null)
+                    {
+                        retorno.Relacion.Count();
+                    }
                 }
                 catch (Exception)
                 {
 
                     throw;
                 }
+
+                return retorno;
             }
         }
 

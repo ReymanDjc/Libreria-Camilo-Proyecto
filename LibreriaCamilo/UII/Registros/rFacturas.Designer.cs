@@ -53,13 +53,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.NombreClientetextBox = new System.Windows.Forms.TextBox();
             this.PreciotextBox = new System.Windows.Forms.TextBox();
             this.DescripcionProductotextBox = new System.Windows.Forms.TextBox();
             this.SubTotaltextBox = new System.Windows.Forms.TextBox();
             this.TotaltextBox = new System.Windows.Forms.TextBox();
+            this.ItbistextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductodataGridView)).BeginInit();
@@ -132,7 +134,7 @@
             this.ProductodataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductodataGridView.Location = new System.Drawing.Point(15, 235);
             this.ProductodataGridView.Name = "ProductodataGridView";
-            this.ProductodataGridView.Size = new System.Drawing.Size(609, 156);
+            this.ProductodataGridView.Size = new System.Drawing.Size(609, 121);
             this.ProductodataGridView.TabIndex = 75;
             // 
             // label9
@@ -169,7 +171,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(405, 206);
+            this.label8.Location = new System.Drawing.Point(407, 206);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 16);
             this.label8.TabIndex = 101;
@@ -180,7 +182,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(240, 204);
+            this.label5.Location = new System.Drawing.Point(242, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 16);
             this.label5.TabIndex = 100;
@@ -202,7 +204,7 @@
             // CantidadnumericUpDown
             // 
             this.CantidadnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CantidadnumericUpDown.Location = new System.Drawing.Point(485, 202);
+            this.CantidadnumericUpDown.Location = new System.Drawing.Point(487, 202);
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
             this.CantidadnumericUpDown.Size = new System.Drawing.Size(54, 20);
             this.CantidadnumericUpDown.TabIndex = 97;
@@ -211,9 +213,9 @@
             // 
             this.Addbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbutton.Location = new System.Drawing.Point(556, 190);
+            this.Addbutton.Location = new System.Drawing.Point(558, 195);
             this.Addbutton.Name = "Addbutton";
-            this.Addbutton.Size = new System.Drawing.Size(53, 32);
+            this.Addbutton.Size = new System.Drawing.Size(53, 27);
             this.Addbutton.TabIndex = 96;
             this.Addbutton.Text = "Agregar";
             this.Addbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -317,23 +319,12 @@
             this.label1.TabIndex = 86;
             this.label1.Text = "FacturaId:";
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(400, 406);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 16);
-            this.label6.TabIndex = 106;
-            this.label6.Text = "Sub Total:";
-            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(400, 440);
+            this.label7.Location = new System.Drawing.Point(402, 440);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 16);
             this.label7.TabIndex = 107;
@@ -362,7 +353,7 @@
             // 
             // SubTotaltextBox
             // 
-            this.SubTotaltextBox.Location = new System.Drawing.Point(485, 402);
+            this.SubTotaltextBox.Location = new System.Drawing.Point(485, 379);
             this.SubTotaltextBox.Name = "SubTotaltextBox";
             this.SubTotaltextBox.Size = new System.Drawing.Size(113, 20);
             this.SubTotaltextBox.TabIndex = 113;
@@ -374,11 +365,43 @@
             this.TotaltextBox.Size = new System.Drawing.Size(144, 20);
             this.TotaltextBox.TabIndex = 114;
             // 
+            // ItbistextBox
+            // 
+            this.ItbistextBox.Location = new System.Drawing.Point(485, 407);
+            this.ItbistextBox.Name = "ItbistextBox";
+            this.ItbistextBox.Size = new System.Drawing.Size(113, 20);
+            this.ItbistextBox.TabIndex = 115;
+            this.ItbistextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ItbistextBox_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(402, 381);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.TabIndex = 106;
+            this.label6.Text = "Sub Total:";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(402, 409);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 16);
+            this.label11.TabIndex = 116;
+            this.label11.Text = "Itbis:";
+            // 
             // rFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 468);
+            this.ClientSize = new System.Drawing.Size(638, 468);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.ItbistextBox);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.SubTotaltextBox);
             this.Controls.Add(this.DescripcionProductotextBox);
@@ -445,11 +468,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox NombreClientetextBox;
         private System.Windows.Forms.TextBox DescripcionProductotextBox;
         private System.Windows.Forms.TextBox PreciotextBox;
         private System.Windows.Forms.TextBox TotaltextBox;
         private System.Windows.Forms.TextBox SubTotaltextBox;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox ItbistextBox;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -61,8 +61,8 @@ namespace LibreriaCamilo.Registros
             }
             if (ProductodataGridView.DataSource == null)
             {
-              //  ProductodataGridView.DataSource == null;
-               // string.IsNullOrEmpty(ProductodataGridView.Text)
+               // ProductodataGridView.DataSource == null;
+               // string.IsNullOrEmpty(ProductodataGridView.Text);
                 CamposVacioserrorProvider.SetError(ProductodataGridView, "Llenar campo.");
                 interruptor = false;
             }
@@ -72,7 +72,7 @@ namespace LibreriaCamilo.Registros
 
         private Facturas LlenarCampos()
         {
-            Factura.NombreCliente = NombreClientetextBox.Text;
+            Factura.ClienteId =Utilidades.TOINT(NombreClientetextBox.Text);
             Factura.FacturaId = Utilidades.TOINT(FacturaIdmaskedTextBox.Text);
             Factura.Fecha = FechadateTimePicker.Value;
             Factura.SubTotal = Utilidades.TOINT(SubTotaltextBox.Text);
@@ -98,9 +98,6 @@ namespace LibreriaCamilo.Registros
             Limpiar();
         }
 
-     
-
-        
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -132,8 +129,7 @@ namespace LibreriaCamilo.Registros
             }
         }
 
-
-        private void BuscarFactura()
+        private void searchButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(FacturaIdmaskedTextBox.Text))
             {
@@ -149,11 +145,11 @@ namespace LibreriaCamilo.Registros
 
                 if (factura != null)
                 {
-                    NombreClientetextBox.Text = factura.NombreCliente;
+                    NombreClientetextBox.Text = Convert.ToString(factura.ClienteId);
                     FechadateTimePicker.Value = factura.Fecha;
 
                     SubTotaltextBox.Text = factura.SubTotal.ToString();
-                    SubTotaltextBox.Text = factura.SubTotal.ToString();
+
 
                     LlenarDataGrid(factura);
                 }
@@ -163,14 +159,11 @@ namespace LibreriaCamilo.Registros
                     Limpiar();
                 }
             }
+
+
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-            BuscarFactura();
-        }
-
-        private void AgregarProducto()
+        private void Addbutton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(DescripcionProductotextBox.Text))
             {
@@ -183,7 +176,6 @@ namespace LibreriaCamilo.Registros
                             Factura.Relacion.Add(new FacturasProductos(Detalle.Producto.ProductoId, Detalle.Producto.Descripcion, Detalle.Producto.Precio, CantidadnumericUpDown.Value));
                             LlenarDataGrid(Factura);
 
-                            CantidadnumericUpDown.Enabled = false;
                             CalculoSubTotal();
                             ProductoIdmaskedTextBox.Clear();
 
@@ -191,11 +183,10 @@ namespace LibreriaCamilo.Registros
                         }
                         else
                         {
-                            MessageBox.Show("Producto Ya Existe.");
+                            MessageBox.Show("Producto Existente.");
                             DescripcionProductotextBox.Clear();
                             PreciotextBox.Clear();
                             CantidadnumericUpDown.Text = "0";
-                            CantidadnumericUpDown.Enabled = false;
                             ProductoIdmaskedTextBox.Focus();
                         }
                     }
@@ -203,7 +194,7 @@ namespace LibreriaCamilo.Registros
                     {
                         if (Detalle.Producto.Cantidad <= 0)
                         {
-                            MessageBox.Show("No queda producto de ese tipo");
+                            MessageBox.Show("Producto Agotado");
                             ProductoIdmaskedTextBox.Clear();
                             DescripcionProductotextBox.Clear();
                             CantidadnumericUpDown.Text = "0";
@@ -212,7 +203,7 @@ namespace LibreriaCamilo.Registros
                         }
                         else
                         {
-                            MessageBox.Show("La cantidad excede la existencia, se cuenta con (" + Detalle.Producto.Cantidad + ") " + Detalle.Producto.Descripcion + ".");
+                            MessageBox.Show("La cantidad de productos es mayor que la existente, se cuenta con (" + Detalle.Producto.Cantidad + ") " + Detalle.Producto.Descripcion + ".");
                             CantidadnumericUpDown.Focus();
                         }
                     }
@@ -231,15 +222,12 @@ namespace LibreriaCamilo.Registros
             ClienteIdmaskedTextBox.Clear();
         }
 
-        private void Addbutton_Click(object sender, EventArgs e)
-        {
-            AgregarProducto();
-        }
-
         private void CalculoSubTotal()
         {
+            
             Factura.SubTotal += Detalle.Producto.Precio * CantidadnumericUpDown.Value;
             SubTotaltextBox.Text = Factura.SubTotal.ToString();
+            ItbistextBox.Focus();
         }
 
         private void Deletebutton_Click(object sender, EventArgs e)
@@ -264,8 +252,7 @@ namespace LibreriaCamilo.Registros
         }
 
 
-
-        private void BuscarProducto()
+        private void ProductosearchButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(ProductoIdmaskedTextBox.Text))
             {
@@ -282,7 +269,7 @@ namespace LibreriaCamilo.Registros
                 else
                 {
                     ProductoIdmaskedTextBox.Clear();
-                    CamposVacioserrorProvider.SetError(ProductoIdmaskedTextBox, "No existe un producto con ese id.");
+                    CamposVacioserrorProvider.SetError(ProductoIdmaskedTextBox, "No hay producto Con este Id");
                     DescripcionProductotextBox.Clear();
                     PreciotextBox.Clear();
                     ProductoIdmaskedTextBox.Focus();
@@ -291,19 +278,13 @@ namespace LibreriaCamilo.Registros
             else
             {
                 DescripcionProductotextBox.Clear();
-                CamposVacioserrorProvider.SetError(ProductoIdmaskedTextBox, "Digite el id de un producto.");
+                CamposVacioserrorProvider.SetError(ProductoIdmaskedTextBox, "Ingrese el id del producto.");
                 ProductoIdmaskedTextBox.Focus();
             }
         }
 
-        private void ProductosearchButton_Click(object sender, EventArgs e)
-        {
-            BuscarProducto();
-        }
 
-
-
-        private void BuscarCliente()
+        private void ClientesearchButton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(ClienteIdmaskedTextBox.Text))
             {
@@ -333,9 +314,18 @@ namespace LibreriaCamilo.Registros
             }
         }
 
-        private void ClientesearchButton_Click(object sender, EventArgs e)
+        private void ItbistextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            BuscarCliente();
+            if ((Keys)e.KeyChar == Keys.Enter)
+            {
+                decimal d = Utilidades.TOINT(ItbistextBox.Text) / 100;
+
+                Factura.Itbis += Factura.SubTotal * Utilidades.TOINT(d.ToString());
+                ItbistextBox.Text = Factura.Itbis.ToString();
+                Factura.Total += Factura.Itbis + Factura.SubTotal;
+                TotaltextBox.Text = Factura.Total.ToString();
+            }
         }
+
     }
 }

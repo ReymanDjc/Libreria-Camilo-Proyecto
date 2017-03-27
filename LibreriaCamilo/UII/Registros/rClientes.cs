@@ -22,7 +22,7 @@ namespace LibreriaCamilo.Registros
         {
             if (string.IsNullOrEmpty(ClienteIdtextBox.Text))
             {
-                MessageBox.Show("Id Vacio.");
+                MessageBox.Show("El Id Esta Vacio.");
                 Limpiar();
 
             }
@@ -42,7 +42,7 @@ namespace LibreriaCamilo.Registros
                 }
                 else
                 {
-                    MessageBox.Show("No existe.");
+                    MessageBox.Show("El Id No existe.");
                     Limpiar();
                 }
             }
@@ -74,36 +74,27 @@ namespace LibreriaCamilo.Registros
 
             if (string.IsNullOrEmpty(NombretextBox.Text))
             {
-                CamposVacioserrorProvider.SetError(NombretextBox, "Llenar campo.");
+                CamposVacioserrorProvider.SetError(NombretextBox, "Llenar Campos Vacios.");
                 interruptor = false;
             }
             if (string.IsNullOrEmpty(DirecciontextBox.Text))
             {
-                CamposVacioserrorProvider.SetError(DirecciontextBox, "Llenar campo.");
+                CamposVacioserrorProvider.SetError(DirecciontextBox, "Llenar Campos Vacios.");
                 interruptor = false;
             }
             if (string.IsNullOrEmpty(EmailtextBox.Text))
             {
-                CamposVacioserrorProvider.SetError(EmailtextBox, "Llenar campo.");
+                CamposVacioserrorProvider.SetError(EmailtextBox, "Llenar Campos Vacios.");
                 interruptor = false;
             }
             if (string.IsNullOrEmpty(TelefonomaskedTextBox.Text))
             {
-                CamposVacioserrorProvider.SetError(TelefonomaskedTextBox, "Llenar campo.");
+                CamposVacioserrorProvider.SetError(TelefonomaskedTextBox, "Llenar Campos Vacios.");
                 interruptor = false;
             }
 
             return interruptor;
         }
-
-
-
-
-
-
-
-
-
 
 
         private void NewButton_Click(object sender, EventArgs e)
@@ -132,9 +123,9 @@ namespace LibreriaCamilo.Registros
                 {
 
                     if (ClientesBLL.Guardar(cliente))
-                        MessageBox.Show("Guardado.");
+                        MessageBox.Show("El Cliente ha SidomGuardado Con Exito.");
                     else
-                        MessageBox.Show("No Guardado.");
+                        MessageBox.Show("El Ciente No ha Guardado.");
                 }
 
                 Limpiar();
@@ -155,11 +146,11 @@ namespace LibreriaCamilo.Registros
                 if (ClientesBLL.Eliminar(ClientesBLL.Buscar(p => p.ClienteId == id)))
                 {
                     Limpiar();
-                    MessageBox.Show("El Usuario se elimino con exito.");
+                    MessageBox.Show("El Cliente se elimino con exito.");
                 }
                 else
                 {
-                    MessageBox.Show("El Usuario no se pudo eliminar.");
+                    MessageBox.Show("El Cliente no se pudo eliminar.");
                 }
             }
         }

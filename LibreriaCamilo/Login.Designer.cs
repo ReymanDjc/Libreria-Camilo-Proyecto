@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,7 +36,9 @@
             this.NombretextBox = new System.Windows.Forms.TextBox();
             this.ClavetextBox = new System.Windows.Forms.TextBox();
             this.Entrarbutton = new System.Windows.Forms.Button();
+            this.CamposVacioserrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -72,7 +75,7 @@
             this.NombretextBox.Location = new System.Drawing.Point(106, 119);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(197, 20);
-            this.NombretextBox.TabIndex = 68;
+            this.NombretextBox.TabIndex = 0;
             // 
             // ClavetextBox
             // 
@@ -80,7 +83,7 @@
             this.ClavetextBox.Name = "ClavetextBox";
             this.ClavetextBox.PasswordChar = '*';
             this.ClavetextBox.Size = new System.Drawing.Size(197, 20);
-            this.ClavetextBox.TabIndex = 67;
+            this.ClavetextBox.TabIndex = 1;
             // 
             // Entrarbutton
             // 
@@ -88,9 +91,14 @@
             this.Entrarbutton.Location = new System.Drawing.Point(116, 193);
             this.Entrarbutton.Name = "Entrarbutton";
             this.Entrarbutton.Size = new System.Drawing.Size(88, 30);
-            this.Entrarbutton.TabIndex = 71;
+            this.Entrarbutton.TabIndex = 2;
             this.Entrarbutton.Text = "Entrar";
             this.Entrarbutton.UseVisualStyleBackColor = true;
+            this.Entrarbutton.Click += new System.EventHandler(this.Entrarbutton_Click);
+            // 
+            // CamposVacioserrorProvider
+            // 
+            this.CamposVacioserrorProvider.ContainerControl = this;
             // 
             // Login
             // 
@@ -105,7 +113,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,5 +129,6 @@
         private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.TextBox ClavetextBox;
         private System.Windows.Forms.Button Entrarbutton;
+        private System.Windows.Forms.ErrorProvider CamposVacioserrorProvider;
     }
 }

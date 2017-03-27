@@ -55,7 +55,7 @@
             this.NewButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.NewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewButton.Image = ((System.Drawing.Image)(resources.GetObject("NewButton.Image")));
-            this.NewButton.Location = new System.Drawing.Point(15, 265);
+            this.NewButton.Location = new System.Drawing.Point(23, 265);
             this.NewButton.Margin = new System.Windows.Forms.Padding(2);
             this.NewButton.Name = "NewButton";
             this.NewButton.Size = new System.Drawing.Size(66, 51);
@@ -68,7 +68,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(302, 105);
             this.pictureBox1.TabIndex = 47;
@@ -96,7 +96,7 @@
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
             this.SaveButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SaveButton.Location = new System.Drawing.Point(125, 264);
+            this.SaveButton.Location = new System.Drawing.Point(133, 264);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(66, 52);
@@ -113,7 +113,7 @@
             this.Deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebutton.Image = ((System.Drawing.Image)(resources.GetObject("Deletebutton.Image")));
             this.Deletebutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Deletebutton.Location = new System.Drawing.Point(236, 263);
+            this.Deletebutton.Location = new System.Drawing.Point(244, 263);
             this.Deletebutton.Margin = new System.Windows.Forms.Padding(2);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.Size = new System.Drawing.Size(60, 53);
@@ -217,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 327);
+            this.ClientSize = new System.Drawing.Size(323, 327);
             this.Controls.Add(this.TelefonomaskedTextBox);
             this.Controls.Add(this.EmailtextBox);
             this.Controls.Add(this.DirecciontextBox);

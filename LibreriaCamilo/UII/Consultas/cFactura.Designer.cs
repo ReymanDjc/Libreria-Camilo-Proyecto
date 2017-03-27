@@ -43,7 +43,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 105);
+            this.pictureBox1.Size = new System.Drawing.Size(503, 105);
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
@@ -51,7 +51,7 @@
             // 
             this.ConsultacomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultacomboBox.FormattingEnabled = true;
-            this.ConsultacomboBox.Location = new System.Drawing.Point(12, 124);
+            this.ConsultacomboBox.Location = new System.Drawing.Point(97, 125);
             this.ConsultacomboBox.Name = "ConsultacomboBox";
             this.ConsultacomboBox.Size = new System.Drawing.Size(94, 21);
             this.ConsultacomboBox.TabIndex = 72;
@@ -59,7 +59,7 @@
             // BuscartextBox
             // 
             this.BuscartextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuscartextBox.Location = new System.Drawing.Point(112, 125);
+            this.BuscartextBox.Location = new System.Drawing.Point(228, 125);
             this.BuscartextBox.Name = "BuscartextBox";
             this.BuscartextBox.Size = new System.Drawing.Size(122, 20);
             this.BuscartextBox.TabIndex = 71;
@@ -68,7 +68,7 @@
             // 
             this.Filtrarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Filtrarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filtrarbutton.Location = new System.Drawing.Point(240, 123);
+            this.Filtrarbutton.Location = new System.Drawing.Point(384, 123);
             this.Filtrarbutton.Name = "Filtrarbutton";
             this.Filtrarbutton.Size = new System.Drawing.Size(60, 23);
             this.Filtrarbutton.TabIndex = 70;
@@ -82,14 +82,14 @@
             this.ClientesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientesdataGridView.Location = new System.Drawing.Point(12, 151);
             this.ClientesdataGridView.Name = "ClientesdataGridView";
-            this.ClientesdataGridView.Size = new System.Drawing.Size(288, 220);
+            this.ClientesdataGridView.Size = new System.Drawing.Size(495, 220);
             this.ClientesdataGridView.TabIndex = 69;
             // 
             // cFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 376);
+            this.ClientSize = new System.Drawing.Size(519, 376);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ConsultacomboBox);
             this.Controls.Add(this.BuscartextBox);

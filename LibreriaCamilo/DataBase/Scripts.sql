@@ -22,9 +22,10 @@ Cantidad decimal);
 create table Facturas(
 FacturaId int identity(1,1) primary key, 
 Fecha datetime,
-SubTotal float,
-Total float,
-NombreCliente varchar(100));
+SubTotal decimal,
+Itbis decimal,
+Total decimal,
+ClienteId int);
 
 create table FacturasProductos(
 FacturaId int, 
