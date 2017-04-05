@@ -67,28 +67,48 @@ namespace LibreriaCamilo.Registros
         private void SaveButton_Click(object sender, EventArgs e)
         {
             var usuario = new Usuarios();
-            if (!Validar())
+
+            int id = 0;
+            try
             {
-                MessageBox.Show("Llenar campos vacios.");
+
+                if (!Validar())
+                {
+                    MessageBox.Show("Por favor llenar los campos");
+                }
+                else
+                {
+                    usuario.UsuarioId = Utilidades.TOINT(UsuarioIdtextBox.Text);
+                    usuario.Nombres = NombretextBox.Text;
+                    usuario.Clave = ClavetextBox.Text;
+                    usuario.ConfirmarClave = ConfirmartextBox.Text;
+                    if (ClavetextBox.Text == ConfirmartextBox.Text)
+                    {
+                        if (id != usuario.UsuarioId)
+                        {
+                            UsuariosBLL.Modificar(usuario);
+                            MessageBox.Show("Usuario modificado con exito");
+                        }
+                        else
+                        {
+                            UsuariosBLL.Guardar(usuario);
+                            MessageBox.Show("Nuevo usuario agregado!");
+                        }
+                    }
+                    else
+                    {
+                        CamposVacioserrorProvider.SetError(ClavetextBox, "Campos no son iguales");
+                        CamposVacioserrorProvider.SetError(ConfirmartextBox, "Campos no son iguales");
+                        MessageBox.Show("CAMPOS No Coinciden");
+
+                    }
+                }
                 Limpiar();
             }
-            else
+            catch (Exception)
             {
-                usuario.UsuarioId = Utilidades.TOINT(UsuarioIdtextBox.Text);
-                usuario.Nombres = NombretextBox.Text;
-                usuario.Clave = ClavetextBox.Text;
-                usuario.ConfirmarClave = ConfirmartextBox.Text;
 
-                if (usuario != null)
-                {
-
-                    if (UsuariosBLL.Guardar(usuario))
-                        MessageBox.Show("Guardado.");
-                    else
-                        MessageBox.Show("No Guardado.");
-                }
-
-                Limpiar();
+                throw;
             }
         }
 
