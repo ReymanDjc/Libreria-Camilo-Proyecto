@@ -71,21 +71,28 @@ namespace LibreriaCamilo.Registros
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            var producto = new Productos();
+
             if (!Validar())
             {
                 MessageBox.Show("Llenar campos vacios.");
-                Limpiar();
+                
             }
             else
             {
-                var producto = new Productos();
-
+                
                 producto.ProductoId = Utilidades.TOINT(ProductoIdtextBox.Text);
                 producto.Descripcion = DescripciontextBox.Text;
                 producto.Costo = Utilidades.TOINT(CostomaskedtextBox.Text);
                 producto.Precio = Utilidades.TOINT(PreciomaskedtextBox.Text);
                 producto.Cantidad = Utilidades.TOINT(CantidadmaskedtextBox.Text);
-                if (producto != null)
+
+                if (Utilidades.TOINT(ProductoIdtextBox.Text) != producto.ProductoId)
+                {
+                    ProductosBLL.Modificar(producto);
+                        MessageBox.Show("Guardado.");
+                }
+                else 
                 {
                     if (ProductosBLL.Guardar(producto))
                         MessageBox.Show("Guardado.");

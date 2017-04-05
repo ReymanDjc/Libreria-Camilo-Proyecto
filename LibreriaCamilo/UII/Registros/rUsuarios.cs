@@ -66,6 +66,7 @@ namespace LibreriaCamilo.Registros
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            var usuario = new Usuarios();
             if (!Validar())
             {
                 MessageBox.Show("Llenar campos vacios.");
@@ -73,8 +74,6 @@ namespace LibreriaCamilo.Registros
             }
             else
             {
-                var usuario = new Usuarios();
-
                 usuario.UsuarioId = Utilidades.TOINT(UsuarioIdtextBox.Text);
                 usuario.Nombres = NombretextBox.Text;
                 usuario.Clave = ClavetextBox.Text;

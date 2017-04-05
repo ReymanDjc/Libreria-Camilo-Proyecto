@@ -318,11 +318,11 @@ namespace LibreriaCamilo.Registros
         {
             if ((Keys)e.KeyChar == Keys.Enter)
             {
-                decimal d = Utilidades.TOINT(ItbistextBox.Text) / 100;
+                decimal d = (Utilidades.TOINT(ItbistextBox.Text) / 100);
 
                 Factura.Itbis += Factura.SubTotal * Utilidades.TOINT(d.ToString());
                 ItbistextBox.Text = Factura.Itbis.ToString();
-                Factura.Total += Factura.Itbis + Factura.SubTotal;
+                Factura.Total += Factura.SubTotal + Utilidades.TOINT(d.ToString());
                 TotaltextBox.Text = Factura.Total.ToString();
             }
         }

@@ -123,7 +123,7 @@ namespace LibreriaCamilo.Registros
                 {
 
                     if (ClientesBLL.Guardar(cliente))
-                        MessageBox.Show("El Cliente ha SidomGuardado Con Exito.");
+                        MessageBox.Show("El Cliente ha Sido Guardado Con Exito.");
                     else
                         MessageBox.Show("El Ciente No ha Guardado.");
                 }

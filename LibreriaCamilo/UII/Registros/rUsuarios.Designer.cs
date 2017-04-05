@@ -130,6 +130,7 @@
             // NombretextBox
             // 
             this.NombretextBox.Location = new System.Drawing.Point(106, 162);
+            this.NombretextBox.MaxLength = 80;
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(197, 20);
             this.NombretextBox.TabIndex = 1;
@@ -137,6 +138,7 @@
             // ClavetextBox
             // 
             this.ClavetextBox.Location = new System.Drawing.Point(106, 194);
+            this.ClavetextBox.MaxLength = 20;
             this.ClavetextBox.Name = "ClavetextBox";
             this.ClavetextBox.PasswordChar = '*';
             this.ClavetextBox.Size = new System.Drawing.Size(197, 20);
@@ -145,6 +147,7 @@
             // ConfirmartextBox
             // 
             this.ConfirmartextBox.Location = new System.Drawing.Point(136, 220);
+            this.ConfirmartextBox.MaxLength = 20;
             this.ConfirmartextBox.Name = "ConfirmartextBox";
             this.ConfirmartextBox.PasswordChar = '*';
             this.ConfirmartextBox.Size = new System.Drawing.Size(167, 20);

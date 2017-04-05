@@ -89,6 +89,7 @@
             // DescripciontextBox
             // 
             this.DescripciontextBox.Location = new System.Drawing.Point(104, 178);
+            this.DescripciontextBox.MaxLength = 100;
             this.DescripciontextBox.Multiline = true;
             this.DescripciontextBox.Name = "DescripciontextBox";
             this.DescripciontextBox.Size = new System.Drawing.Size(204, 37);
