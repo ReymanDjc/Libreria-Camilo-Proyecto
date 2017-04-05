@@ -73,33 +73,40 @@ namespace LibreriaCamilo.Registros
         {
             var producto = new Productos();
 
-            if (!Validar())
-            {
-                MessageBox.Show("Llenar campos vacios.");
-                
-            }
-            else
-            {
-                
-                producto.ProductoId = Utilidades.TOINT(ProductoIdtextBox.Text);
-                producto.Descripcion = DescripciontextBox.Text;
-                producto.Costo = Utilidades.TOINT(CostomaskedtextBox.Text);
-                producto.Precio = Utilidades.TOINT(PreciomaskedtextBox.Text);
-                producto.Cantidad = Utilidades.TOINT(CantidadmaskedtextBox.Text);
+            int id = 0;
 
-                if (Utilidades.TOINT(ProductoIdtextBox.Text) != producto.ProductoId)
+            try
+            {
+                if (!Validar())
                 {
-                    ProductosBLL.Modificar(producto);
-                        MessageBox.Show("Guardado.");
+                    MessageBox.Show("Llenar campos vacios.");
                 }
-                else 
+                else
                 {
-                    if (ProductosBLL.Guardar(producto))
-                        MessageBox.Show("Guardado.");
+                    producto.ProductoId = Utilidades.TOINT(ProductoIdtextBox.Text);
+                    producto.Descripcion = DescripciontextBox.Text;
+                    producto.Costo = Utilidades.TOINT(CostomaskedtextBox.Text);
+                    producto.Precio = Utilidades.TOINT(PreciomaskedtextBox.Text);
+                    producto.Cantidad = Utilidades.TOINT(CantidadmaskedtextBox.Text);
+                    if (id != producto.ProductoId)
+                    {
+                        ProductosBLL.Modificar(producto);
+                        MessageBox.Show("Producto Modificado y Guardado.");
+                    }
                     else
-                        MessageBox.Show("No Guardado.");
+                    {
+                        if (ProductosBLL.Guardar(producto))
+                            MessageBox.Show("Guardado.");
+                        else
+                            MessageBox.Show("No Guardado.");
+                    }
                 }
                 Limpiar();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
 
