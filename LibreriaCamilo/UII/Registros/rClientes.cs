@@ -104,32 +104,44 @@ namespace LibreriaCamilo.Registros
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (!Validar())
-            {
-                MessageBox.Show("Llenar campos vacios.");
-                Limpiar();
-            }
-            else
-            {
-                var cliente = new Clientes();
+            var cliente = new Clientes();
 
-                cliente.ClienteId = Utilidades.TOINT(ClienteIdtextBox.Text);
-                cliente.Nombres = NombretextBox.Text;
-                cliente.Direccion = DirecciontextBox.Text;
-                cliente.Email = EmailtextBox.Text;
-                cliente.Telefono = TelefonomaskedTextBox.Text;
+            int id = 0;
 
-                if (cliente != null)
+            try
+            {
+                if (!Validar())
                 {
-
-                    if (ClientesBLL.Guardar(cliente))
-                        MessageBox.Show("El Cliente ha Sido Guardado Con Exito.");
-                    else
-                        MessageBox.Show("El Ciente No ha Guardado.");
+                    MessageBox.Show("Llenar campos vacios.");
                 }
-
+                else
+                {
+                    cliente.ClienteId = Utilidades.TOINT(ClienteIdtextBox.Text);
+                    cliente.Nombres = NombretextBox.Text;
+                    cliente.Direccion = DirecciontextBox.Text;
+                    cliente.Email = EmailtextBox.Text;
+                    cliente.Telefono = TelefonomaskedTextBox.Text;
+                    if (id != cliente.ClienteId)
+                    {
+                        ClientesBLL.Modificar(cliente);
+                        MessageBox.Show("Cliente Modificado y Guardado.");
+                    }
+                    else
+                    {
+                        if (ClientesBLL.Guardar(cliente))
+                            MessageBox.Show("Guardado.");
+                        else
+                            MessageBox.Show("No Guardado.");
+                    }
+                }
                 Limpiar();
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         private void Deletebutton_Click(object sender, EventArgs e)
