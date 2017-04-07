@@ -87,6 +87,8 @@
             this.ClavetextBox.PasswordChar = '*';
             this.ClavetextBox.Size = new System.Drawing.Size(197, 20);
             this.ClavetextBox.TabIndex = 1;
+            this.ClavetextBox.TextChanged += new System.EventHandler(this.ClavetextBox_TextChanged);
+            this.ClavetextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ClavetextBox_KeyPress);
             // 
             // Entrarbutton
             // 

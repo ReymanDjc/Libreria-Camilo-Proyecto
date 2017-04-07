@@ -47,7 +47,7 @@
             this.Filtrarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Filtrarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filtrarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Filtrarbutton.Image")));
-            this.Filtrarbutton.Location = new System.Drawing.Point(246, 111);
+            this.Filtrarbutton.Location = new System.Drawing.Point(344, 146);
             this.Filtrarbutton.Name = "Filtrarbutton";
             this.Filtrarbutton.Size = new System.Drawing.Size(48, 23);
             this.Filtrarbutton.TabIndex = 6;
@@ -59,9 +59,9 @@
             this.ClientesdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClientesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientesdataGridView.Location = new System.Drawing.Point(12, 139);
+            this.ClientesdataGridView.Location = new System.Drawing.Point(12, 174);
             this.ClientesdataGridView.Name = "ClientesdataGridView";
-            this.ClientesdataGridView.Size = new System.Drawing.Size(282, 202);
+            this.ClientesdataGridView.Size = new System.Drawing.Size(380, 202);
             this.ClientesdataGridView.TabIndex = 5;
             // 
             // pictureBox1
@@ -69,7 +69,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 105);
+            this.pictureBox1.Size = new System.Drawing.Size(403, 142);
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
             // 
@@ -77,17 +77,17 @@
             // 
             this.FiltrarComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FiltrarComboBox.FormattingEnabled = true;
-            this.FiltrarComboBox.Location = new System.Drawing.Point(12, 112);
+            this.FiltrarComboBox.Location = new System.Drawing.Point(12, 146);
             this.FiltrarComboBox.Name = "FiltrarComboBox";
-            this.FiltrarComboBox.Size = new System.Drawing.Size(94, 21);
+            this.FiltrarComboBox.Size = new System.Drawing.Size(156, 21);
             this.FiltrarComboBox.TabIndex = 76;
             // 
             // FiltrartextBox
             // 
             this.FiltrartextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.FiltrartextBox.Location = new System.Drawing.Point(121, 113);
+            this.FiltrartextBox.Location = new System.Drawing.Point(189, 147);
             this.FiltrartextBox.Name = "FiltrartextBox";
-            this.FiltrartextBox.Size = new System.Drawing.Size(119, 20);
+            this.FiltrartextBox.Size = new System.Drawing.Size(149, 20);
             this.FiltrartextBox.TabIndex = 75;
             // 
             // CamposVacioserrorProvider
@@ -100,7 +100,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(121, 346);
+            this.button1.Location = new System.Drawing.Point(165, 381);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 52);
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 409);
+            this.ClientSize = new System.Drawing.Size(404, 444);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FiltrarComboBox);
             this.Controls.Add(this.FiltrartextBox);

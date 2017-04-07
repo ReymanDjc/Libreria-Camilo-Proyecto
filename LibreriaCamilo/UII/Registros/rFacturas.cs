@@ -363,14 +363,12 @@ namespace LibreriaCamilo.Registros
             if ((Keys)e.KeyChar == Keys.Enter)
             {
                 Calculos();
-
-               /* decimal d = (Utilidades.TOINT(ItbistextBox.Text) / 100);
-                Factura.Itbis += Factura.SubTotal * Utilidades.TOINT(d.ToString());
-                //ItbistextBox.Text = Factura.Itbis.ToString();
-                Factura.Total += Factura.SubTotal + Utilidades.TOINT(d.ToString());
-                TotaltextBox.Text = Factura.Total.ToString();*/
             }
         }
 
+        private void ItbistextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

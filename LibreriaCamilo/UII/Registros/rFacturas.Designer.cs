@@ -120,9 +120,9 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(10, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(612, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(621, 98);
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
@@ -133,7 +133,7 @@
             // ProductodataGridView
             // 
             this.ProductodataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductodataGridView.Location = new System.Drawing.Point(15, 235);
+            this.ProductodataGridView.Location = new System.Drawing.Point(15, 247);
             this.ProductodataGridView.Name = "ProductodataGridView";
             this.ProductodataGridView.Size = new System.Drawing.Size(609, 121);
             this.ProductodataGridView.TabIndex = 75;
@@ -142,7 +142,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(9, 204);
+            this.label9.Location = new System.Drawing.Point(9, 216);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(95, 16);
             this.label9.TabIndex = 105;
@@ -150,7 +150,7 @@
             // 
             // ProductoIdmaskedTextBox
             // 
-            this.ProductoIdmaskedTextBox.Location = new System.Drawing.Point(106, 165);
+            this.ProductoIdmaskedTextBox.Location = new System.Drawing.Point(106, 177);
             this.ProductoIdmaskedTextBox.Mask = "99999";
             this.ProductoIdmaskedTextBox.Name = "ProductoIdmaskedTextBox";
             this.ProductoIdmaskedTextBox.Size = new System.Drawing.Size(40, 20);
@@ -161,7 +161,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 166);
+            this.label4.Location = new System.Drawing.Point(9, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 102;
@@ -172,7 +172,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(407, 206);
+            this.label8.Location = new System.Drawing.Point(407, 218);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 16);
             this.label8.TabIndex = 101;
@@ -183,7 +183,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(230, 206);
+            this.label5.Location = new System.Drawing.Point(230, 218);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 16);
             this.label5.TabIndex = 100;
@@ -194,7 +194,7 @@
             this.ProductosearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ProductosearchButton.Image = ((System.Drawing.Image)(resources.GetObject("ProductosearchButton.Image")));
             this.ProductosearchButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProductosearchButton.Location = new System.Drawing.Point(165, 162);
+            this.ProductosearchButton.Location = new System.Drawing.Point(165, 174);
             this.ProductosearchButton.Name = "ProductosearchButton";
             this.ProductosearchButton.Size = new System.Drawing.Size(55, 25);
             this.ProductosearchButton.TabIndex = 99;
@@ -205,7 +205,7 @@
             // CantidadnumericUpDown
             // 
             this.CantidadnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CantidadnumericUpDown.Location = new System.Drawing.Point(487, 202);
+            this.CantidadnumericUpDown.Location = new System.Drawing.Point(487, 214);
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
             this.CantidadnumericUpDown.Size = new System.Drawing.Size(75, 20);
             this.CantidadnumericUpDown.TabIndex = 97;
@@ -215,7 +215,7 @@
             this.Addbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Addbutton.Image = ((System.Drawing.Image)(resources.GetObject("Addbutton.Image")));
             this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbutton.Location = new System.Drawing.Point(568, 198);
+            this.Addbutton.Location = new System.Drawing.Point(568, 209);
             this.Addbutton.Name = "Addbutton";
             this.Addbutton.Size = new System.Drawing.Size(30, 28);
             this.Addbutton.TabIndex = 96;
@@ -227,7 +227,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(230, 135);
+            this.label10.Location = new System.Drawing.Point(230, 147);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 16);
             this.label10.TabIndex = 95;
@@ -239,7 +239,7 @@
             this.ClientesearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientesearchButton.Image = ((System.Drawing.Image)(resources.GetObject("ClientesearchButton.Image")));
             this.ClientesearchButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ClientesearchButton.Location = new System.Drawing.Point(165, 126);
+            this.ClientesearchButton.Location = new System.Drawing.Point(165, 138);
             this.ClientesearchButton.Margin = new System.Windows.Forms.Padding(2);
             this.ClientesearchButton.Name = "ClientesearchButton";
             this.ClientesearchButton.Size = new System.Drawing.Size(55, 25);
@@ -250,7 +250,7 @@
             // 
             // ClienteIdmaskedTextBox
             // 
-            this.ClienteIdmaskedTextBox.Location = new System.Drawing.Point(106, 131);
+            this.ClienteIdmaskedTextBox.Location = new System.Drawing.Point(106, 143);
             this.ClienteIdmaskedTextBox.Mask = "99999";
             this.ClienteIdmaskedTextBox.Name = "ClienteIdmaskedTextBox";
             this.ClienteIdmaskedTextBox.Size = new System.Drawing.Size(40, 20);
@@ -259,7 +259,7 @@
             // 
             // FacturaIdmaskedTextBox
             // 
-            this.FacturaIdmaskedTextBox.Location = new System.Drawing.Point(106, 95);
+            this.FacturaIdmaskedTextBox.Location = new System.Drawing.Point(106, 107);
             this.FacturaIdmaskedTextBox.Mask = "99999";
             this.FacturaIdmaskedTextBox.Name = "FacturaIdmaskedTextBox";
             this.FacturaIdmaskedTextBox.Size = new System.Drawing.Size(40, 20);
@@ -272,7 +272,7 @@
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.Image = ((System.Drawing.Image)(resources.GetObject("searchButton.Image")));
             this.searchButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.searchButton.Location = new System.Drawing.Point(165, 89);
+            this.searchButton.Location = new System.Drawing.Point(165, 101);
             this.searchButton.Margin = new System.Windows.Forms.Padding(2);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(55, 29);
@@ -285,7 +285,7 @@
             // 
             this.FechadateTimePicker.CustomFormat = "yyyy/MM/dd";
             this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(539, 91);
+            this.FechadateTimePicker.Location = new System.Drawing.Point(539, 103);
             this.FechadateTimePicker.Name = "FechadateTimePicker";
             this.FechadateTimePicker.Size = new System.Drawing.Size(89, 20);
             this.FechadateTimePicker.TabIndex = 89;
@@ -294,7 +294,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 132);
+            this.label3.Location = new System.Drawing.Point(12, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 88;
@@ -304,7 +304,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(478, 96);
+            this.label2.Location = new System.Drawing.Point(478, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 87;
@@ -314,7 +314,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(12, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 86;
@@ -333,7 +333,7 @@
             // 
             // NombreClientetextBox
             // 
-            this.NombreClientetextBox.Location = new System.Drawing.Point(303, 131);
+            this.NombreClientetextBox.Location = new System.Drawing.Point(303, 143);
             this.NombreClientetextBox.MaxLength = 80;
             this.NombreClientetextBox.Name = "NombreClientetextBox";
             this.NombreClientetextBox.Size = new System.Drawing.Size(96, 20);
@@ -341,14 +341,14 @@
             // 
             // PreciotextBox
             // 
-            this.PreciotextBox.Location = new System.Drawing.Point(303, 202);
+            this.PreciotextBox.Location = new System.Drawing.Point(303, 214);
             this.PreciotextBox.Name = "PreciotextBox";
             this.PreciotextBox.Size = new System.Drawing.Size(96, 20);
             this.PreciotextBox.TabIndex = 111;
             // 
             // DescripcionProductotextBox
             // 
-            this.DescripcionProductotextBox.Location = new System.Drawing.Point(106, 203);
+            this.DescripcionProductotextBox.Location = new System.Drawing.Point(106, 215);
             this.DescripcionProductotextBox.Name = "DescripcionProductotextBox";
             this.DescripcionProductotextBox.Size = new System.Drawing.Size(114, 20);
             this.DescripcionProductotextBox.TabIndex = 112;
@@ -373,6 +373,7 @@
             this.ItbistextBox.Name = "ItbistextBox";
             this.ItbistextBox.Size = new System.Drawing.Size(139, 20);
             this.ItbistextBox.TabIndex = 115;
+            this.ItbistextBox.TextChanged += new System.EventHandler(this.ItbistextBox_TextChanged);
             this.ItbistextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ItbistextBox_KeyPress);
             // 
             // label6

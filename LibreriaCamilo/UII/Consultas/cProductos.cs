@@ -62,6 +62,7 @@ namespace LibreriaCamilo.Consultas
                 int precio = Utilidades.TOINT(FiltrartextBox.Text);
                 ProductosdataGridView.DataSource = ProductosBLL.GetList(p => p.Precio == precio);
             }
+
         }
     }
 }
