@@ -88,28 +88,28 @@
             // productosToolStripMenuItem1
             // 
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.productosToolStripMenuItem1.Text = "Usuarios";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.productosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem1
             // 
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.usuariosToolStripMenuItem.Text = "Productos";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.facturaToolStripMenuItem.Text = "Facturas";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
@@ -127,29 +127,30 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientesToolStripMenuItem.Text = "Usuarios";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.productosToolStripMenuItem.Text = "Clientes";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem1
             // 
             this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
-            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem1.Text = "Productos";
             this.usuariosToolStripMenuItem1.Click += new System.EventHandler(this.usuariosToolStripMenuItem1_Click);
             // 
             // facturaToolStripMenuItem1
             // 
             this.facturaToolStripMenuItem1.Name = "facturaToolStripMenuItem1";
-            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
-            this.facturaToolStripMenuItem1.Text = "Factura";
+            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.facturaToolStripMenuItem1.Text = "Facturas";
+            this.facturaToolStripMenuItem1.Click += new System.EventHandler(this.facturaToolStripMenuItem1_Click);
             // 
             // ayudaToolStripMenuItem
             // 

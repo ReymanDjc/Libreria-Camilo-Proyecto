@@ -57,5 +57,10 @@ namespace LibreriaCamilo
         {
             new rFacturas().Show();
         }
+
+        private void facturaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new cFactura().Show();
+        }
     }
 }

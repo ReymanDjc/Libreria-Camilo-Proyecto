@@ -25,6 +25,7 @@ Fecha datetime,
 SubTotal decimal,
 Itbis decimal,
 Total decimal,
+NombreCliente varchar(80),
 ClienteId int);
 
 create table FacturasProductos(

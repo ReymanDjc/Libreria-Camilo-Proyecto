@@ -72,12 +72,14 @@ namespace LibreriaCamilo.Registros
 
         private Facturas LlenarCampos()
         {
-            Factura.ClienteId =Utilidades.TOINT(NombreClientetextBox.Text);
+            
+
             Factura.FacturaId = Utilidades.TOINT(FacturaIdmaskedTextBox.Text);
             Factura.Fecha = FechadateTimePicker.Value;
             Factura.SubTotal = Utilidades.TOINT(SubTotaltextBox.Text);
             Factura.Total = Utilidades.TOINT(TotaltextBox.Text);
 
+            Factura.NombreCliente = NombreClientetextBox.Text;
 
             return Factura;
         }
@@ -145,10 +147,12 @@ namespace LibreriaCamilo.Registros
 
                 if (factura != null)
                 {
-                    NombreClientetextBox.Text = Convert.ToString(factura.ClienteId);
+                    NombreClientetextBox.Text = factura.NombreCliente;
                     FechadateTimePicker.Value = factura.Fecha;
 
                     SubTotaltextBox.Text = factura.SubTotal.ToString();
+                    TotaltextBox.Text = factura.Total.ToString();
+                    ItbistextBox.Text = factura.Itbis.ToString();
 
 
                     LlenarDataGrid(factura);
@@ -321,7 +325,7 @@ namespace LibreriaCamilo.Registros
                 decimal d = (Utilidades.TOINT(ItbistextBox.Text) / 100);
 
                 Factura.Itbis += Factura.SubTotal * Utilidades.TOINT(d.ToString());
-                ItbistextBox.Text = Factura.Itbis.ToString();
+                //ItbistextBox.Text = Factura.Itbis.ToString();
                 Factura.Total += Factura.SubTotal + Utilidades.TOINT(d.ToString());
                 TotaltextBox.Text = Factura.Total.ToString();
             }
