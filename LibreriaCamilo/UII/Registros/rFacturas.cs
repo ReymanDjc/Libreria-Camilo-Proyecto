@@ -45,6 +45,7 @@ namespace LibreriaCamilo.Registros
             ClienteIdmaskedTextBox.Clear();
             NombreClientetextBox.Clear();
             SubTotaltextBox.Clear();
+            ItbistextBox.Clear();
             TotaltextBox.Clear();
             FechadateTimePicker.Value = DateTime.Now;
             ProductoIdmaskedTextBox.Clear();
@@ -141,47 +142,6 @@ namespace LibreriaCamilo.Registros
 
                 throw;
             }
-        
-
-            /*int id = 0;
-
-            try
-            {
-                if (!Validar())
-                {
-                    MessageBox.Show("Llenar campos vacios.");
-                }
-                else
-                {
-                    cliente.ClienteId = Utilidades.TOINT(ClienteIdtextBox.Text);
-                    cliente.Nombres = NombretextBox.Text;
-                    cliente.Direccion = DirecciontextBox.Text;
-                    cliente.Email = EmailtextBox.Text;
-                    cliente.Telefono = TelefonomaskedTextBox.Text;
-                    if (id != cliente.ClienteId)
-                    {
-                        ClientesBLL.Modificar(cliente);
-                        MessageBox.Show("Cliente Modificado y Guardado.");
-                    }
-                    else
-                    {
-                        if (ClientesBLL.Guardar(cliente))
-                            MessageBox.Show("Guardado.");
-                        else
-                            MessageBox.Show("No Guardado.");
-                    }
-                }
-                Limpiar();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }*/
-
-
-
-
 
         }
 
@@ -218,9 +178,8 @@ namespace LibreriaCamilo.Registros
                     FechadateTimePicker.Value = factura.Fecha;
 
                     SubTotaltextBox.Text = factura.SubTotal.ToString();
-                    TotaltextBox.Text = factura.Total.ToString();
                     ItbistextBox.Text = factura.Itbis.ToString();
-
+                    TotaltextBox.Text = factura.Total.ToString();
 
                     LlenarDataGrid(factura);
                 }
@@ -385,16 +344,31 @@ namespace LibreriaCamilo.Registros
             }
         }
 
+
+
+        private void Calculos()
+        {
+         
+            decimal itbis = Convert.ToDecimal(ItbistextBox.Text) * Convert.ToDecimal(SubTotaltextBox.Text);
+            ItbistextBox.Text = Convert.ToString(itbis);
+            decimal itbis2 = itbis / 100;
+            Factura.Itbis = itbis2;
+            ItbistextBox.Text = Factura.Itbis.ToString();
+            Factura.Total += Factura.SubTotal + Factura.Itbis;
+            TotaltextBox.Text = Factura.Total.ToString();
+        }
+
         private void ItbistextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((Keys)e.KeyChar == Keys.Enter)
             {
-                decimal d = (Utilidades.TOINT(ItbistextBox.Text) / 100);
+                Calculos();
 
+               /* decimal d = (Utilidades.TOINT(ItbistextBox.Text) / 100);
                 Factura.Itbis += Factura.SubTotal * Utilidades.TOINT(d.ToString());
                 //ItbistextBox.Text = Factura.Itbis.ToString();
                 Factura.Total += Factura.SubTotal + Utilidades.TOINT(d.ToString());
-                TotaltextBox.Text = Factura.Total.ToString();
+                TotaltextBox.Text = Factura.Total.ToString();*/
             }
         }
 
