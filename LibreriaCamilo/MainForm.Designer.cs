@@ -56,7 +56,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(847, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(847, 28);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,14 +64,18 @@
             // 
             this.aRCHIVOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salirToolStripMenuItem});
+            this.aRCHIVOToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aRCHIVOToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aRCHIVOToolStripMenuItem.Image")));
             this.aRCHIVOToolStripMenuItem.Name = "aRCHIVOToolStripMenuItem";
-            this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.aRCHIVOToolStripMenuItem.Text = "Archivo";
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -82,35 +86,45 @@
             this.clientesToolStripMenuItem1,
             this.usuariosToolStripMenuItem,
             this.facturaToolStripMenuItem});
+            this.rEGISTROSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rEGISTROSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rEGISTROSToolStripMenuItem.Image")));
             this.rEGISTROSToolStripMenuItem.Name = "rEGISTROSToolStripMenuItem";
-            this.rEGISTROSToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.rEGISTROSToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.rEGISTROSToolStripMenuItem.Text = "Registros";
             // 
             // productosToolStripMenuItem1
             // 
+            this.productosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("productosToolStripMenuItem1.Image")));
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.productosToolStripMenuItem1.Text = "Usuarios";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.productosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem1
             // 
+            this.clientesToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("clientesToolStripMenuItem1.Image")));
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // usuariosToolStripMenuItem
             // 
+            this.usuariosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuariosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem.Image")));
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.usuariosToolStripMenuItem.Text = "Productos";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // facturaToolStripMenuItem
             // 
+            this.facturaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facturaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem.Image")));
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.facturaToolStripMenuItem.Text = "Facturas";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
@@ -121,42 +135,54 @@
             this.productosToolStripMenuItem,
             this.usuariosToolStripMenuItem1,
             this.facturaToolStripMenuItem1});
+            this.cONSULTASToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cONSULTASToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cONSULTASToolStripMenuItem.Image")));
             this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
-            this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.cONSULTASToolStripMenuItem.Text = "Consultas";
             // 
             // clientesToolStripMenuItem
             // 
+            this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("clientesToolStripMenuItem.Image")));
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.clientesToolStripMenuItem.Text = "Usuarios";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
+            this.productosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("productosToolStripMenuItem.Image")));
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.productosToolStripMenuItem.Text = "Clientes";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem1
             // 
+            this.usuariosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usuariosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem1.Image")));
             this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
-            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.usuariosToolStripMenuItem1.Text = "Productos";
             this.usuariosToolStripMenuItem1.Click += new System.EventHandler(this.usuariosToolStripMenuItem1_Click);
             // 
             // facturaToolStripMenuItem1
             // 
+            this.facturaToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facturaToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem1.Image")));
             this.facturaToolStripMenuItem1.Name = "facturaToolStripMenuItem1";
-            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.facturaToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.facturaToolStripMenuItem1.Text = "Facturas";
             this.facturaToolStripMenuItem1.Click += new System.EventHandler(this.facturaToolStripMenuItem1_Click);
             // 
             // ayudaToolStripMenuItem
             // 
+            this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // MainForm
