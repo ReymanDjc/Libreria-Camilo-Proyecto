@@ -36,6 +36,7 @@
             this.FiltrarComboBox = new System.Windows.Forms.ComboBox();
             this.FiltrartextBox = new System.Windows.Forms.TextBox();
             this.CamposVacioserrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).BeginInit();
@@ -45,11 +46,11 @@
             // 
             this.Filtrarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Filtrarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filtrarbutton.Location = new System.Drawing.Point(241, 111);
+            this.Filtrarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Filtrarbutton.Image")));
+            this.Filtrarbutton.Location = new System.Drawing.Point(246, 111);
             this.Filtrarbutton.Name = "Filtrarbutton";
-            this.Filtrarbutton.Size = new System.Drawing.Size(60, 23);
+            this.Filtrarbutton.Size = new System.Drawing.Size(48, 23);
             this.Filtrarbutton.TabIndex = 6;
-            this.Filtrarbutton.Text = "Filtrar";
             this.Filtrarbutton.UseVisualStyleBackColor = true;
             this.Filtrarbutton.Click += new System.EventHandler(this.Filtrarbutton_Click);
             // 
@@ -60,7 +61,7 @@
             this.ClientesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientesdataGridView.Location = new System.Drawing.Point(12, 139);
             this.ClientesdataGridView.Name = "ClientesdataGridView";
-            this.ClientesdataGridView.Size = new System.Drawing.Size(289, 220);
+            this.ClientesdataGridView.Size = new System.Drawing.Size(282, 202);
             this.ClientesdataGridView.TabIndex = 5;
             // 
             // pictureBox1
@@ -84,7 +85,7 @@
             // FiltrartextBox
             // 
             this.FiltrartextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.FiltrartextBox.Location = new System.Drawing.Point(116, 113);
+            this.FiltrartextBox.Location = new System.Drawing.Point(121, 113);
             this.FiltrartextBox.Name = "FiltrartextBox";
             this.FiltrartextBox.Size = new System.Drawing.Size(119, 20);
             this.FiltrartextBox.TabIndex = 75;
@@ -93,11 +94,27 @@
             // 
             this.CamposVacioserrorProvider.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(121, 346);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 52);
+            this.button1.TabIndex = 118;
+            this.button1.Text = "Imprimir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // cClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 371);
+            this.ClientSize = new System.Drawing.Size(306, 409);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.FiltrarComboBox);
             this.Controls.Add(this.FiltrartextBox);
             this.Controls.Add(this.pictureBox1);
@@ -121,5 +138,6 @@
         private System.Windows.Forms.ComboBox FiltrarComboBox;
         private System.Windows.Forms.TextBox FiltrartextBox;
         private System.Windows.Forms.ErrorProvider CamposVacioserrorProvider;
+        private System.Windows.Forms.Button button1;
     }
 }

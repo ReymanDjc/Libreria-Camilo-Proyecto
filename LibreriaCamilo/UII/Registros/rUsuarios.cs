@@ -100,7 +100,6 @@ namespace LibreriaCamilo.Registros
                         CamposVacioserrorProvider.SetError(ClavetextBox, "Campos no son iguales");
                         CamposVacioserrorProvider.SetError(ConfirmartextBox, "Campos no son iguales");
                         MessageBox.Show("CAMPOS No Coinciden");
-
                     }
                 }
                 Limpiar();

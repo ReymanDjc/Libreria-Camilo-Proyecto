@@ -26,6 +26,11 @@ namespace LibreriaCamilo.Registros
 
         private void rFacturas_Load(object sender, EventArgs e)
         {
+            NombreClientetextBox.Enabled = false;
+            DescripcionProductotextBox.Enabled = false;
+            PreciotextBox.Enabled = false;
+            SubTotaltextBox.Enabled = false;
+            TotaltextBox.Enabled = false;
             
         }
 
@@ -103,19 +108,81 @@ namespace LibreriaCamilo.Registros
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (Validar())
+            int id = 0;
+            try
             {
-                Factura = LlenarCampos();
-
-                if (FacturasBLL.Guardar(Factura))
+                if (!Validar())
                 {
-                    ExistenciaProducto(CantidadnumericUpDown.Value);
-                    MessageBox.Show("Guardado.");
-                    Limpiar();
+                    MessageBox.Show("Llenar campos vacios.");
                 }
                 else
-                    MessageBox.Show("No Guardado.");
+                {
+                    Factura = LlenarCampos();
+                    if (id != Factura.FacturaId)
+                    {
+                        FacturasBLL.Modificar(Factura);
+                        MessageBox.Show("Factura Modificada y Guardada.");
+                    }
+                    else
+                    {
+                        if (FacturasBLL.Guardar(Factura))
+                        {
+                            ExistenciaProducto(CantidadnumericUpDown.Value);
+                            MessageBox.Show("Guardado.");
+                            Limpiar();
+                        }
+                        else
+                            MessageBox.Show("No Guardado.");
+                    }
+                }
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        
+
+            /*int id = 0;
+
+            try
+            {
+                if (!Validar())
+                {
+                    MessageBox.Show("Llenar campos vacios.");
+                }
+                else
+                {
+                    cliente.ClienteId = Utilidades.TOINT(ClienteIdtextBox.Text);
+                    cliente.Nombres = NombretextBox.Text;
+                    cliente.Direccion = DirecciontextBox.Text;
+                    cliente.Email = EmailtextBox.Text;
+                    cliente.Telefono = TelefonomaskedTextBox.Text;
+                    if (id != cliente.ClienteId)
+                    {
+                        ClientesBLL.Modificar(cliente);
+                        MessageBox.Show("Cliente Modificado y Guardado.");
+                    }
+                    else
+                    {
+                        if (ClientesBLL.Guardar(cliente))
+                            MessageBox.Show("Guardado.");
+                        else
+                            MessageBox.Show("No Guardado.");
+                    }
+                }
+                Limpiar();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }*/
+
+
+
+
+
         }
 
         private void ExistenciaProducto(decimal cantidad)

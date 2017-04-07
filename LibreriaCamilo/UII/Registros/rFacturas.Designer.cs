@@ -62,6 +62,7 @@
             this.ItbistextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductodataGridView)).BeginInit();
@@ -72,10 +73,10 @@
             // 
             this.NewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewButton.Image = ((System.Drawing.Image)(resources.GetObject("NewButton.Image")));
-            this.NewButton.Location = new System.Drawing.Point(55, 405);
+            this.NewButton.Location = new System.Drawing.Point(15, 407);
             this.NewButton.Margin = new System.Windows.Forms.Padding(2);
             this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(75, 51);
+            this.NewButton.Size = new System.Drawing.Size(75, 52);
             this.NewButton.TabIndex = 29;
             this.NewButton.Text = "Nuevo";
             this.NewButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -88,7 +89,7 @@
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
             this.SaveButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SaveButton.Location = new System.Drawing.Point(169, 404);
+            this.SaveButton.Location = new System.Drawing.Point(110, 407);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 52);
@@ -104,7 +105,7 @@
             this.Deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebutton.Image = ((System.Drawing.Image)(resources.GetObject("Deletebutton.Image")));
             this.Deletebutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Deletebutton.Location = new System.Drawing.Point(283, 405);
+            this.Deletebutton.Location = new System.Drawing.Point(212, 407);
             this.Deletebutton.Margin = new System.Windows.Forms.Padding(2);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.Size = new System.Drawing.Size(75, 52);
@@ -149,7 +150,7 @@
             // 
             // ProductoIdmaskedTextBox
             // 
-            this.ProductoIdmaskedTextBox.Location = new System.Drawing.Point(106, 164);
+            this.ProductoIdmaskedTextBox.Location = new System.Drawing.Point(106, 165);
             this.ProductoIdmaskedTextBox.Mask = "99999";
             this.ProductoIdmaskedTextBox.Name = "ProductoIdmaskedTextBox";
             this.ProductoIdmaskedTextBox.Size = new System.Drawing.Size(40, 20);
@@ -160,7 +161,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 165);
+            this.label4.Location = new System.Drawing.Point(9, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 102;
@@ -182,7 +183,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(242, 204);
+            this.label5.Location = new System.Drawing.Point(230, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 16);
             this.label5.TabIndex = 100;
@@ -191,12 +192,12 @@
             // ProductosearchButton
             // 
             this.ProductosearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ProductosearchButton.Image = ((System.Drawing.Image)(resources.GetObject("ProductosearchButton.Image")));
             this.ProductosearchButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProductosearchButton.Location = new System.Drawing.Point(165, 161);
+            this.ProductosearchButton.Location = new System.Drawing.Point(165, 162);
             this.ProductosearchButton.Name = "ProductosearchButton";
-            this.ProductosearchButton.Size = new System.Drawing.Size(54, 25);
+            this.ProductosearchButton.Size = new System.Drawing.Size(55, 25);
             this.ProductosearchButton.TabIndex = 99;
-            this.ProductosearchButton.Text = "Buscar";
             this.ProductosearchButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ProductosearchButton.UseVisualStyleBackColor = true;
             this.ProductosearchButton.Click += new System.EventHandler(this.ProductosearchButton_Click);
@@ -206,18 +207,18 @@
             this.CantidadnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CantidadnumericUpDown.Location = new System.Drawing.Point(487, 202);
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
-            this.CantidadnumericUpDown.Size = new System.Drawing.Size(54, 20);
+            this.CantidadnumericUpDown.Size = new System.Drawing.Size(75, 20);
             this.CantidadnumericUpDown.TabIndex = 97;
             // 
             // Addbutton
             // 
             this.Addbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Addbutton.Image = ((System.Drawing.Image)(resources.GetObject("Addbutton.Image")));
             this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbutton.Location = new System.Drawing.Point(558, 195);
+            this.Addbutton.Location = new System.Drawing.Point(568, 198);
             this.Addbutton.Name = "Addbutton";
-            this.Addbutton.Size = new System.Drawing.Size(53, 27);
+            this.Addbutton.Size = new System.Drawing.Size(30, 28);
             this.Addbutton.TabIndex = 96;
-            this.Addbutton.Text = "Agregar";
             this.Addbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Addbutton.UseVisualStyleBackColor = true;
             this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
@@ -236,13 +237,13 @@
             // 
             this.ClientesearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientesearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientesearchButton.Image = ((System.Drawing.Image)(resources.GetObject("ClientesearchButton.Image")));
             this.ClientesearchButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ClientesearchButton.Location = new System.Drawing.Point(161, 128);
+            this.ClientesearchButton.Location = new System.Drawing.Point(165, 126);
             this.ClientesearchButton.Margin = new System.Windows.Forms.Padding(2);
             this.ClientesearchButton.Name = "ClientesearchButton";
-            this.ClientesearchButton.Size = new System.Drawing.Size(50, 23);
+            this.ClientesearchButton.Size = new System.Drawing.Size(55, 25);
             this.ClientesearchButton.TabIndex = 93;
-            this.ClientesearchButton.Text = "Buscar";
             this.ClientesearchButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ClientesearchButton.UseVisualStyleBackColor = true;
             this.ClientesearchButton.Click += new System.EventHandler(this.ClientesearchButton_Click);
@@ -274,7 +275,7 @@
             this.searchButton.Location = new System.Drawing.Point(165, 89);
             this.searchButton.Margin = new System.Windows.Forms.Padding(2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(47, 29);
+            this.searchButton.Size = new System.Drawing.Size(55, 29);
             this.searchButton.TabIndex = 90;
             this.searchButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.searchButton.UseVisualStyleBackColor = true;
@@ -333,8 +334,9 @@
             // NombreClientetextBox
             // 
             this.NombreClientetextBox.Location = new System.Drawing.Point(303, 131);
+            this.NombreClientetextBox.MaxLength = 80;
             this.NombreClientetextBox.Name = "NombreClientetextBox";
-            this.NombreClientetextBox.Size = new System.Drawing.Size(113, 20);
+            this.NombreClientetextBox.Size = new System.Drawing.Size(96, 20);
             this.NombreClientetextBox.TabIndex = 110;
             // 
             // PreciotextBox
@@ -346,30 +348,30 @@
             // 
             // DescripcionProductotextBox
             // 
-            this.DescripcionProductotextBox.Location = new System.Drawing.Point(110, 203);
+            this.DescripcionProductotextBox.Location = new System.Drawing.Point(106, 203);
             this.DescripcionProductotextBox.Name = "DescripcionProductotextBox";
-            this.DescripcionProductotextBox.Size = new System.Drawing.Size(109, 20);
+            this.DescripcionProductotextBox.Size = new System.Drawing.Size(114, 20);
             this.DescripcionProductotextBox.TabIndex = 112;
             // 
             // SubTotaltextBox
             // 
             this.SubTotaltextBox.Location = new System.Drawing.Point(485, 379);
             this.SubTotaltextBox.Name = "SubTotaltextBox";
-            this.SubTotaltextBox.Size = new System.Drawing.Size(113, 20);
+            this.SubTotaltextBox.Size = new System.Drawing.Size(139, 20);
             this.SubTotaltextBox.TabIndex = 113;
             // 
             // TotaltextBox
             // 
-            this.TotaltextBox.Location = new System.Drawing.Point(454, 437);
+            this.TotaltextBox.Location = new System.Drawing.Point(485, 437);
             this.TotaltextBox.Name = "TotaltextBox";
-            this.TotaltextBox.Size = new System.Drawing.Size(144, 20);
+            this.TotaltextBox.Size = new System.Drawing.Size(139, 20);
             this.TotaltextBox.TabIndex = 114;
             // 
             // ItbistextBox
             // 
             this.ItbistextBox.Location = new System.Drawing.Point(485, 407);
             this.ItbistextBox.Name = "ItbistextBox";
-            this.ItbistextBox.Size = new System.Drawing.Size(113, 20);
+            this.ItbistextBox.Size = new System.Drawing.Size(139, 20);
             this.ItbistextBox.TabIndex = 115;
             this.ItbistextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ItbistextBox_KeyPress);
             // 
@@ -395,11 +397,27 @@
             this.label11.TabIndex = 116;
             this.label11.Text = "Itbis:";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(303, 407);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 52);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "Imprimir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // rFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 468);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.ItbistextBox);
             this.Controls.Add(this.TotaltextBox);
@@ -476,5 +494,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox ItbistextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

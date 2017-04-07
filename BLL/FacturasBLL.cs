@@ -53,6 +53,23 @@ namespace BLL
             }
         }
 
+        public static bool Modificar(Facturas factura)
+        {
+            using (var conec = new Repository<Facturas>())
+            {
+                try
+                {
+                    return conec.Modificar(factura);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+            return false;
+        }
+
 
         public static Facturas Buscar(Expression<Func<Facturas, bool>> criterio)
         {

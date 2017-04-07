@@ -37,6 +37,7 @@
             this.ClavetextBox = new System.Windows.Forms.TextBox();
             this.Entrarbutton = new System.Windows.Forms.Button();
             this.CamposVacioserrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CamposVacioserrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 151);
+            this.label3.Location = new System.Drawing.Point(19, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 70;
@@ -64,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 123);
+            this.label2.Location = new System.Drawing.Point(19, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 69;
@@ -72,14 +73,16 @@
             // 
             // NombretextBox
             // 
-            this.NombretextBox.Location = new System.Drawing.Point(106, 119);
+            this.NombretextBox.Location = new System.Drawing.Point(100, 119);
+            this.NombretextBox.MaxLength = 80;
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(197, 20);
             this.NombretextBox.TabIndex = 0;
             // 
             // ClavetextBox
             // 
-            this.ClavetextBox.Location = new System.Drawing.Point(106, 151);
+            this.ClavetextBox.Location = new System.Drawing.Point(100, 151);
+            this.ClavetextBox.MaxLength = 20;
             this.ClavetextBox.Name = "ClavetextBox";
             this.ClavetextBox.PasswordChar = '*';
             this.ClavetextBox.Size = new System.Drawing.Size(197, 20);
@@ -88,7 +91,7 @@
             // Entrarbutton
             // 
             this.Entrarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Entrarbutton.Location = new System.Drawing.Point(116, 193);
+            this.Entrarbutton.Location = new System.Drawing.Point(100, 193);
             this.Entrarbutton.Name = "Entrarbutton";
             this.Entrarbutton.Size = new System.Drawing.Size(88, 30);
             this.Entrarbutton.TabIndex = 2;
@@ -100,11 +103,23 @@
             // 
             this.CamposVacioserrorProvider.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(209, 193);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 30);
+            this.button1.TabIndex = 71;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 235);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Entrarbutton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -130,5 +145,6 @@
         private System.Windows.Forms.TextBox ClavetextBox;
         private System.Windows.Forms.Button Entrarbutton;
         private System.Windows.Forms.ErrorProvider CamposVacioserrorProvider;
+        private System.Windows.Forms.Button button1;
     }
 }

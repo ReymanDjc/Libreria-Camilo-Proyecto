@@ -47,10 +47,9 @@ namespace LibreriaCamilo.Extra
         private void Entrarbutton_Click(object sender, EventArgs e)
         {
             Usuarios usuario = null;
-            if (NombretextBox.Text == "Admin")
+            if (NombretextBox.Text == "admin")
             {
                 usuario = new Usuarios(1, "Admin", "1234");
-                UsuariosBLL.Guardar(usuario);
             }
             else
             {
@@ -60,10 +59,8 @@ namespace LibreriaCamilo.Extra
             {
                 if (ClavetextBox.Text == usuario.Clave)
                 {
-                   // Limpiar();
-                    //    UsuarioG = usuario;
+                   Limpiar();
                     this.Hide();
-
                     new MainForm().Show();
                 }
                 else
@@ -73,11 +70,22 @@ namespace LibreriaCamilo.Extra
                     ClavetextBox.Clear();
                 }
             }
+            else
+            {
+                MessageBox.Show("Usuario no Existe..");
+                NombretextBox.Clear();
+                ClavetextBox.Clear();
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

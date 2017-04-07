@@ -103,9 +103,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 16);
+            this.label4.Size = new System.Drawing.Size(92, 16);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Confirmar Clave:";
+            this.label4.Text = "Confirmar C:";
             // 
             // label3
             // 
@@ -146,16 +146,17 @@
             // 
             // ConfirmartextBox
             // 
-            this.ConfirmartextBox.Location = new System.Drawing.Point(136, 220);
+            this.ConfirmartextBox.Location = new System.Drawing.Point(106, 220);
             this.ConfirmartextBox.MaxLength = 20;
             this.ConfirmartextBox.Name = "ConfirmartextBox";
             this.ConfirmartextBox.PasswordChar = '*';
-            this.ConfirmartextBox.Size = new System.Drawing.Size(167, 20);
+            this.ConfirmartextBox.Size = new System.Drawing.Size(197, 20);
             this.ConfirmartextBox.TabIndex = 3;
             // 
             // UsuarioIdtextBox
             // 
             this.UsuarioIdtextBox.Location = new System.Drawing.Point(106, 130);
+            this.UsuarioIdtextBox.MaxLength = 200;
             this.UsuarioIdtextBox.Name = "UsuarioIdtextBox";
             this.UsuarioIdtextBox.Size = new System.Drawing.Size(51, 20);
             this.UsuarioIdtextBox.TabIndex = 23;

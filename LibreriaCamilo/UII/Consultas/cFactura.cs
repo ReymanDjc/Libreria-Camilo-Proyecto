@@ -71,5 +71,20 @@ namespace LibreriaCamilo.Consultas
             FacturasdataGridView.DataSource = Lista;
             this.FacturasdataGridView.Columns["Relacion"].Visible = false;
         }
+
+        private void FiltrartextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FacturasdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -52,18 +52,18 @@
             // 
             // PreciomaskedtextBox
             // 
-            this.PreciomaskedtextBox.Location = new System.Drawing.Point(61, 266);
+            this.PreciomaskedtextBox.Location = new System.Drawing.Point(104, 266);
             this.PreciomaskedtextBox.Mask = "99999999999";
             this.PreciomaskedtextBox.Name = "PreciomaskedtextBox";
-            this.PreciomaskedtextBox.Size = new System.Drawing.Size(247, 20);
+            this.PreciomaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.PreciomaskedtextBox.TabIndex = 3;
             // 
             // CostomaskedtextBox
             // 
-            this.CostomaskedtextBox.Location = new System.Drawing.Point(61, 228);
+            this.CostomaskedtextBox.Location = new System.Drawing.Point(104, 228);
             this.CostomaskedtextBox.Mask = "99999999999";
             this.CostomaskedtextBox.Name = "CostomaskedtextBox";
-            this.CostomaskedtextBox.Size = new System.Drawing.Size(247, 20);
+            this.CostomaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.CostomaskedtextBox.TabIndex = 2;
             // 
             // PrecioLabel
@@ -97,7 +97,7 @@
             // 
             // ProductoIdtextBox
             // 
-            this.ProductoIdtextBox.Location = new System.Drawing.Point(96, 143);
+            this.ProductoIdtextBox.Location = new System.Drawing.Point(104, 143);
             this.ProductoIdtextBox.Name = "ProductoIdtextBox";
             this.ProductoIdtextBox.Size = new System.Drawing.Size(79, 20);
             this.ProductoIdtextBox.TabIndex = 59;
@@ -201,10 +201,10 @@
             // 
             // CantidadmaskedtextBox
             // 
-            this.CantidadmaskedtextBox.Location = new System.Drawing.Point(83, 301);
+            this.CantidadmaskedtextBox.Location = new System.Drawing.Point(104, 301);
             this.CantidadmaskedtextBox.Mask = "99999999999";
             this.CantidadmaskedtextBox.Name = "CantidadmaskedtextBox";
-            this.CantidadmaskedtextBox.Size = new System.Drawing.Size(225, 20);
+            this.CantidadmaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.CantidadmaskedtextBox.TabIndex = 4;
             // 
             // label1
