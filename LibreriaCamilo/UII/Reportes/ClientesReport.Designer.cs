@@ -38,12 +38,12 @@
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ClientesReport
+            // ProductosReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 437);
-            this.Name = "ClientesReport";
+            this.Name = "ProductosReport";
             this.Text = "ClientesReport";
             this.Load += new System.EventHandler(this.ClientesReport_Load);
             this.ResumeLayout(false);

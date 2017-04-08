@@ -53,7 +53,7 @@
             // PreciomaskedtextBox
             // 
             this.PreciomaskedtextBox.Location = new System.Drawing.Point(104, 266);
-            this.PreciomaskedtextBox.Mask = "99999999999";
+            this.PreciomaskedtextBox.Mask = "999999999";
             this.PreciomaskedtextBox.Name = "PreciomaskedtextBox";
             this.PreciomaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.PreciomaskedtextBox.TabIndex = 3;
@@ -61,7 +61,7 @@
             // CostomaskedtextBox
             // 
             this.CostomaskedtextBox.Location = new System.Drawing.Point(104, 228);
-            this.CostomaskedtextBox.Mask = "99999999999";
+            this.CostomaskedtextBox.Mask = "999999999";
             this.CostomaskedtextBox.Name = "CostomaskedtextBox";
             this.CostomaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.CostomaskedtextBox.TabIndex = 2;
@@ -202,7 +202,7 @@
             // CantidadmaskedtextBox
             // 
             this.CantidadmaskedtextBox.Location = new System.Drawing.Point(104, 301);
-            this.CantidadmaskedtextBox.Mask = "99999999999";
+            this.CantidadmaskedtextBox.Mask = "999999999";
             this.CantidadmaskedtextBox.Name = "CantidadmaskedtextBox";
             this.CantidadmaskedtextBox.Size = new System.Drawing.Size(204, 20);
             this.CantidadmaskedtextBox.TabIndex = 4;
